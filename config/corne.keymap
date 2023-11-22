@@ -16,16 +16,6 @@
             bindings = <&mo 3>;
             key-positions = <37 40>;
         };
-
-        combo_lt {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <20 32>;
-        };
-
-        combo_gt {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <21 33>;
-        };
     };
 
     behaviors {
@@ -87,10 +77,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp EXCL   &kp AT          &kp HASH              &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTERISK    &kp LPAR         &kp RPAR      &kp DELETE
-&kp TAB     &kp GRAVE  &kp MINUS       &kp EQUAL             &trans    &trans       &trans     &trans    &kp LBKT        &kp RBKT         &kp COLON     &kp DOUBLE_QUOTES
-&caps_word  &kp TILDE  &kp UNDERSCORE  &kp PLUS              &trans    &trans       &trans     &trans    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QUESTION  &kp PIPE
-                                       &kp LS(LA(LC(LGUI)))  &trans    &kp SPACE    &kp RET    &trans    &caps_word
+&kp ESCAPE  &kp EXCL   &kp AT          &kp HASH              &kp DLLR        &kp PRCNT        &kp CARET         &kp AMPS         &kp ASTERISK       &kp LPAR   &kp RPAR      &kp DELETE
+&kp TAB     &kp GRAVE  &kp MINUS       &kp LEFT_BRACKET      &kp LEFT_BRACE  &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS   &kp COLON     &kp DOUBLE_QUOTES
+&caps_word  &kp TILDE  &kp UNDERSCORE  &trans                &trans          &trans           &trans            &trans           &trans             &kp EQUAL  &kp QUESTION  &kp PIPE
+                                       &kp LS(LA(LC(LGUI)))  &trans          &kp SPACE        &kp RET           &trans           &caps_word
             >;
 
             label = "SYM";
