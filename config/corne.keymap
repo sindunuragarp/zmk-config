@@ -26,6 +26,11 @@
             bindings = <&to 3>;
             key-positions = <39 40 41>;
         };
+
+        combo_open_menu {
+            bindings = <&kp LS(LA(LC(LG(ESCAPE))))>;
+            key-positions = <38 39>;
+        };
     };
 
     behaviors {
