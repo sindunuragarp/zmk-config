@@ -70,9 +70,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC         &kp Q  &kp W                 &kp E                 &kp R             &kp T                   &kp Y                 &kp U             &kp I             &kp O                 &kp P     &kp GRAVE
+&kp ESC         &kp Q  &kp W                 &kp E                 &kp R             &kp T                   &kp Y                 &kp U             &kp I             &kp O                 &kp P     &kp UNDERSCORE
 &kp TAB         &kp A  &hrml LEFT_CONTROL S  &hrml LEFT_ALT D      &hrml LEFT_GUI F  &kp G                   &kp H                 &hrmr LEFT_GUI J  &hrmr LEFT_ALT K  &hrmr LEFT_CONTROL L  &kp SEMI  &kp SQT
-&sk LEFT_SHIFT  &kp Z  &kp X                 &kp C                 &kp V             &kp B                   &kp N                 &kp M             &kp COMMA         &kp DOT               &kp FSLH  &kp BACKSLASH
+&sk LEFT_SHIFT  &kp Z  &kp X                 &kp C                 &kp V             &kp B                   &kp N                 &kp M             &kp COMMA         &kp DOT               &kp FSLH  &kp GRAVE
                                              &kp LS(LA(LC(LGUI)))  &mo 2             &mt LEFT_SHIFT SPACE    &mt LEFT_SHIFT ENTER  &mo 1             &kp DELETE
             >;
 
@@ -87,10 +87,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp EXCL   &kp AT     &kp HASH              &kp DLLR        &kp PRCNT        &kp CARET         &kp AMPS         &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&kp TAB     &kp UNDER  &kp MINUS  &kp LEFT_BRACKET      &kp LEFT_BRACE  &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans                &kp COLON              &kp DOUBLE_QUOTES
-&caps_word  &kp EQUAL  &kp PLUS   &trans                &trans          &trans           &trans            &trans           &trans             &trans                &kp QUESTION           &kp PIPE
-                                  &kp LS(LA(LC(LGUI)))  &trans          &kp BACKSPACE    &kp ENTER         &trans           &kp DEL
+&kp ESCAPE  &kp EXCL       &kp AT  &kp HASH              &kp DLLR        &kp PRCNT               &kp CARET              &kp AMPS         &kp ASTERISK       &kp MINUS         &kp PLUS      &kp EQUAL
+&kp TAB     &kp BACKSLASH  &kp LT  &kp LEFT_BRACKET      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp COLON     &kp DOUBLE_QUOTES
+&caps_word  &kp PIPE       &none   &none                 &none           &none                   &none                  &none            &none              &none             &kp QUESTION  &kp TILDE
+                                   &kp LS(LA(LC(LGUI)))  &trans          &kp BACKSPACE           &kp ENTER              &trans           &kp DEL
             >;
 
             label = "SYM";
@@ -115,10 +115,10 @@
 
         config_layer {
             bindings = <
-&sys_reset   &trans  &trans  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &kp C_PLAY_PAUSE       &kp C_PREV            &kp C_NEXT            &trans  &trans  &sys_reset
-&trans       &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_MUTE             &kp C_VOL_DN          &kp C_VOL_UP          &trans  &trans  &trans
-&bootloader  &trans  &trans  &trans        &kp LC(L)     &kp C_POWER     &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &bootloader
-                             &to 0         &to 0         &to 0           &to 0                  &to 0                 &to 0
+&sys_reset   &none  &none  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &kp C_PLAY_PAUSE       &kp C_PREV            &kp C_NEXT            &none  &none  &sys_reset
+&none        &none  &none  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_MUTE             &kp C_VOL_DN          &kp C_VOL_UP          &none  &none  &none
+&bootloader  &none  &none  &none         &kp LC(L)     &kp C_POWER     &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none  &bootloader
+                           &to 0         &to 0         &to 0           &to 0                  &to 0                 &to 0
             >;
 
             label = "CONF";
