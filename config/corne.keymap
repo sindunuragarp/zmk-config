@@ -28,7 +28,7 @@
         };
 
         combo_open_menu {
-            bindings = <&kp LS(LA(LC(LG(ESCAPE))))>;
+            bindings = <&kp LC(LCTRL)>;
             key-positions = <38 39>;
         };
     };
