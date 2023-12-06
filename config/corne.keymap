@@ -28,7 +28,7 @@
         };
 
         combo_open_menu {
-            bindings = <&kp LC(RCTRL)>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <38 39>;
         };
     };
