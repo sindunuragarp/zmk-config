@@ -92,11 +92,11 @@
     };
 
     macros {
-        up_dir: up_dir {
+        username: username {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOT &kp DOT &kp FSLH>;
-            label = "UP_DIR";
+            bindings = <&none &kp S &kp I &kp N &kp D &kp U &kp N &kp U &kp R &kp A &kp G &kp A &kp R &kp P>;
+            label = "USERNAME";
         };
     };
 
@@ -128,9 +128,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &up_dir
-&kp TAB     &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AT
-&caps_word  &kp DOLLAR    &kp MINUS     &kp PLUS          &kp ASTERISK  &kp PERCENT     &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &caps_word
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &username
+&kp TAB     &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PERCENT
+&caps_word  &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &kp AT
                                         &trans            &trans        &trans          &trans         &trans                &trans
             >;
 
