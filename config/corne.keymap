@@ -145,9 +145,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LG(TILDE)   &kp F1   &kp F2   &kp F3                &kp F4   &kp F5           &kp PAGE_UP    &kp HOME      &kp UP        &kp END        &kp LC(TAB)      &kp LG(X)
-&kp LG(TAB)     &kp F6   &kp F7   &kp F8                &kp F9   &kp F10          &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(LS(TAB))  &kp LG(C)
-&kp LEFT_SHIFT  &kp F11  &kp F12  &kp F13               &kp F14  &kp F15          &none          &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none            &kp LG(V)
+&kp LG(TILDE)   &kp F1   &kp F2   &kp F3                &kp F4   &kp F5           &kp PAGE_UP    &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))  &kp LG(X)
+&kp LG(TAB)     &kp F6   &kp F7   &kp F8                &kp F9   &kp F10          &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LA(LG(LEFT))   &kp LG(C)
+&kp LEFT_SHIFT  &kp F11  &kp F12  &kp F13               &kp F14  &kp F15          &none          &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none              &kp LG(V)
                                   &kp LS(LA(LC(LGUI)))  &trans   &kp BACKSPACE    &kp RET        &trans        &kp DEL
             >;
 
