@@ -111,10 +111,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC         &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J                 &kp L             &kp U             &kp Y                 &kp MINUS     &kp BACKSPACE
-&kp TAB         &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M                 &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp SINGLE_QUOTE
-&sk LEFT_SHIFT  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K                 &kp H             &shift_comma      &shift_dot            &shift_slash  &kp GRAVE
-                                             &kp LS(LA(LC(LGUI)))  &mo 2             &mt LEFT_SHIFT SPACE    &mt LEFT_SHIFT ENTER  &mo 1             &kp DELETE
+&kp ESC         &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB         &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp SINGLE_QUOTE
+&sk LEFT_SHIFT  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &sk RIGHT_SHIFT
+                                             &kp LS(LA(LC(LGUI)))  &mo 2             &mt LEFT_SHIFT SPACE    &lt 1 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
@@ -128,10 +128,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &kp BACKSPACE
-&kp TAB     &kp CARET     &kp LT        &kp GREATER_THAN      &kp EQUAL     &kp HASH         &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR
-&caps_word  &up_dir       &kp MINUS     &kp PLUS              &kp ASTERISK  &kp PERCENT      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &kp AT_SIGN
-                                        &kp LS(LA(LC(LGUI)))  &trans        &kp BACKSPACE    &kp ENTER      &trans                &kp DEL
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &up_dir
+&kp TAB     &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AT
+&caps_word  &kp DOLLAR    &kp MINUS     &kp PLUS          &kp ASTERISK  &kp PERCENT     &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &caps_word
+                                        &trans            &trans        &trans          &trans         &trans                &trans
             >;
 
             label = "SYM";
@@ -145,10 +145,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LG(TILDE)   &kp F1   &kp F2   &kp F3                &kp F4   &kp F5           &kp PAGE_UP    &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))  &kp LG(X)
-&kp LG(TAB)     &kp F6   &kp F7   &kp F8                &kp F9   &kp F10          &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LA(LG(LEFT))   &kp LG(C)
-&kp LEFT_SHIFT  &kp F11  &kp F12  &kp F13               &kp F14  &kp F15          &none          &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none              &kp LG(V)
-                                  &kp LS(LA(LC(LGUI)))  &trans   &kp BACKSPACE    &kp RET        &trans        &kp DEL
+&kp LG(TILDE)   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp PAGE_UP    &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))          &kp LG(X)
+&kp LG(TAB)     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LA(LG(LEFT))           &kp LG(C)
+&kp LEFT_SHIFT  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15    &kp C_MENU     &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp LS(LA(LC(LG(SPACE))))  &kp LG(V)
+                                  &trans   &trans   &trans     &trans         &trans        &trans
             >;
 
             label = "NAV";
