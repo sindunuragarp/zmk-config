@@ -32,6 +32,11 @@
             bindings = <&tog 1>;
             key-positions = <0 11>;
         };
+
+        execute_homerow_app {
+            bindings = <&kp LS(LG(SPACE))>;
+            key-positions = <38 39>;
+        };
     };
 
     behaviors {
