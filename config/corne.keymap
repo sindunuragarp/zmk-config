@@ -119,9 +119,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp APOSTROPHE  &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O           &kp MINUS
-&tap_shift  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash    &tap_shift
+&kp ESC     &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &tap_shift
                                          &kp LS(LA(LC(LGUI)))  &lt 3 LC(SPACE)   &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
@@ -130,9 +130,9 @@
 
         qwerty_layer {
             bindings = <
-&trans  &kp Q  &kp W          &kp E             &kp R             &kp T     &kp Y   &kp U             &kp I             &kp O          &kp P           &trans
-&trans  &kp A  &hrml LCTRL S  &hrml LEFT_ALT D  &hrml LEFT_GUI F  &kp G     &kp H   &hrmr LEFT_GUI J  &hrmr LEFT_ALT K  &hrmr LCTRL L  &kp APOSTROPHE  &trans
-&trans  &kp Z  &kp X          &kp C             &kp V             &kp B     &kp N   &kp M             &trans            &trans         &trans          &trans
+&trans  &kp Q  &kp W          &kp E             &kp R             &kp T     &kp Y   &kp U             &kp I             &kp O          &kp P      &trans
+&trans  &kp A  &hrml LCTRL S  &hrml LEFT_ALT D  &hrml LEFT_GUI F  &kp G     &kp H   &hrmr LEFT_GUI J  &hrmr LEFT_ALT K  &hrmr LCTRL L  &kp MINUS  &trans
+&trans  &kp Z  &kp X          &kp C             &kp V             &kp B     &kp N   &kp M             &trans            &trans         &trans     &trans
                               &trans            &trans            &trans    &trans  &trans            &trans
             >;
         };
@@ -145,10 +145,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp AT_SIGN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &kp PERCENT
-&kp TAB      &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &username
-&tap_shift   &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &tap_shift
-                                         &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI    &trans         &trans                &trans
+&kp AT_SIGN      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9      &kp NUMBER_0       &kp PERCENT
+&kp EXCLAMATION  &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QUESTION
+&none            &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp COLON             &kp SEMICOLON          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+                                             &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI    &trans         &trans                &trans
             >;
 
             label = "SYM";
