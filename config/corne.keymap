@@ -147,8 +147,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))  &kp LG(LA(UP))
-&kp TAB         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &kp LG(LA(LEFT))   &kp LG(LA(DOWN))
+&kp LG(TILDE)   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))  &kp LG(LA(UP))
+&kp LG(TAB)     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &kp LG(LA(LEFT))   &kp LG(LA(DOWN))
 &kp LEFT_SHIFT  &kp LG(S)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)    &kp LS(LA(LC(LG(SPACE))))  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none              &none
                                       &trans     &trans     &trans       &kp LEFT_GUI               &kp LEFT_ALT  &kp LCTRL
             >;
