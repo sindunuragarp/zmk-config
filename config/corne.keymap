@@ -13,19 +13,24 @@
         compatible = "zmk,combos";
 
         activate_config_layer {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <37 40>;
             layers = <0>;
         };
 
         activate_config_layer_left {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <36 37 38>;
         };
 
         activate_config_layer_right {
-            bindings = <&to 3>;
+            bindings = <&to 4>;
             key-positions = <39 40 41>;
+        };
+
+        toggle_qwerty {
+            bindings = <&tog 1>;
+            key-positions = <0 11>;
         };
     };
 
@@ -107,13 +112,22 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC         &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB         &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp SINGLE_QUOTE
-&sk LEFT_SHIFT  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &sk RIGHT_SHIFT
-                                             &kp LS(LA(LC(LGUI)))  &lt 2 LC(SPACE)   &mt LEFT_SHIFT SPACE    &lt 1 ENTER  &kp BACKSPACE     &kp DELETE
+&kp ESC         &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp APOSTROPHE  &kp GRAVE
+&kp TAB         &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O           &kp MINUS
+&sk LEFT_SHIFT  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash    &sk RIGHT_SHIFT
+                                             &kp LS(LA(LC(LGUI)))  &lt 3 LC(SPACE)   &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
+        };
+
+        qwerty_layer {
+            bindings = <
+&trans  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I   &kp O   &kp P           &trans
+&trans  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K   &kp L   &kp APOSTROPHE  &trans
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &trans  &trans  &trans          &trans
+                      &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
 
         symbol_layer {
@@ -155,7 +169,7 @@
 &sys_reset   &none  &none  &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1    &kp C_PLAY_PAUSE  &kp C_PREV            &kp C_NEXT            &none  &none  &sys_reset
 &none        &none  &none  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4    &kp C_MUTE        &kp C_VOL_DN          &kp C_VOL_UP          &none  &none  &none
 &bootloader  &none  &none  &none         &kp LG(LC(Q))  &kp C_POWER     &none             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none  &bootloader
-                           &to 0         &to 0          &to 0           &to 0             &to 0                 &to 0
+                           &tog 4        &tog 4         &tog 4          &tog 4            &tog 4                &tog 4
             >;
 
             label = "CONF";
