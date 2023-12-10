@@ -15,6 +15,7 @@
         activate_config_layer {
             bindings = <&to 3>;
             key-positions = <37 40>;
+            layers = <0>;
         };
 
         activate_config_layer_left {
@@ -30,6 +31,7 @@
         combo_open_menu {
             bindings = <&kp LG(SPACE)>;
             key-positions = <38 39>;
+            layers = <0>;
         };
     };
 
@@ -114,7 +116,7 @@
 &kp ESC         &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
 &kp TAB         &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp SINGLE_QUOTE
 &sk LEFT_SHIFT  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &sk RIGHT_SHIFT
-                                             &kp LS(LA(LC(LGUI)))  &mo 2             &mt LEFT_SHIFT SPACE    &lt 1 ENTER  &kp BACKSPACE     &kp DELETE
+                                             &kp LS(LA(LC(LGUI)))  &lt 2 LC(SPACE)   &mt LEFT_SHIFT SPACE    &lt 1 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
@@ -131,7 +133,7 @@
 &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &username
 &kp TAB     &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PERCENT
 &caps_word  &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &kp AT
-                                        &trans            &trans        &trans          &trans         &trans                &trans
+                                        &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI    &trans         &trans                &trans
             >;
 
             label = "SYM";
@@ -145,10 +147,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LG(TILDE)   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp PAGE_UP    &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))          &kp LG(X)
-&kp LG(TAB)     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LA(LG(LEFT))           &kp LG(C)
-&kp LEFT_SHIFT  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15    &kp C_MENU     &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &kp LS(LA(LC(LG(SPACE))))  &kp LG(V)
-                                  &trans   &trans   &trans     &trans         &trans        &trans
+&kp TILDE       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))  &kp LG(LA(UP))
+&kp TAB         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &kp LG(LA(LEFT))   &kp LG(LA(DOWN))
+&kp LEFT_SHIFT  &kp LG(S)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)    &kp LS(LA(LC(LG(SPACE))))  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none              &none
+                                      &trans     &trans     &trans       &kp LEFT_GUI               &kp LEFT_ALT  &kp LCTRL
             >;
 
             label = "NAV";
