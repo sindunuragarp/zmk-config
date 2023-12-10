@@ -91,9 +91,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        caps_word_or_sticky: caps_word_or_sticky {
+        tap_shift: tap_shift {
             compatible = "zmk,behavior-tap-dance";
-            label = "CAPS_WORD_OR_STICKY";
+            label = "TAP_SHIFT";
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
@@ -119,10 +119,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC               &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp APOSTROPHE  &kp GRAVE
-&kp TAB               &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O           &kp MINUS
-&caps_word_or_sticky  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash    &caps_word_or_sticky
-                                                   &kp LS(LA(LC(LGUI)))  &lt 3 LC(SPACE)   &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
+&kp ESC     &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp APOSTROPHE  &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O           &kp MINUS
+&tap_shift  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash    &tap_shift
+                                         &kp LS(LA(LC(LGUI)))  &lt 3 LC(SPACE)   &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
@@ -145,10 +145,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp AT_SIGN           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &kp PERCENT
-&kp TAB               &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &username
-&caps_word_or_sticky  &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &caps_word_or_sticky
-                                                  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI    &trans         &trans                &trans
+&kp AT_SIGN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0     &kp PERCENT
+&kp TAB      &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &username
+&tap_shift   &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp SEMICOLON    &tap_shift
+                                         &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI    &trans         &trans                &trans
             >;
 
             label = "SYM";
@@ -162,9 +162,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LG(TILDE)   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &kp LG(LA(RIGHT))  &kp LG(LA(UP))
-&kp LG(TAB)     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &kp LG(LA(LEFT))   &kp LG(LA(DOWN))
-&kp LEFT_SHIFT  &kp LG(S)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)    &kp LS(LA(LC(LG(SPACE))))  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none              &kp LEFT_SHIFT
+&kp LG(TILDE)   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &none  &kp LG(LA(RIGHT))
+&kp LG(TAB)     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &none  &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(S)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)    &kp LS(LA(LC(LG(SPACE))))  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
                                       &trans     &trans     &trans       &kp LEFT_GUI               &kp LEFT_ALT  &kp LCTRL
             >;
 
