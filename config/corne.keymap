@@ -102,6 +102,20 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
+
+        tap_bracket_left: tap_bracket_left {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_BRACKET_LEFT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACKET>;
+        };
+
+        tap_bracket_right: tap_bracket_right {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_BRACKET_RIGHT";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
+        };
     };
 
     macros {
@@ -150,10 +164,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp AT_SIGN      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9      &kp NUMBER_0       &kp PERCENT
-&kp EXCLAMATION  &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp QUESTION
-&none            &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp COLON             &kp SEMICOLON          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-                                             &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI    &trans         &trans                &trans
+&kp EXCLAMATION  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8       &kp NUMBER_9        &kp NUMBER_0  &kp QUESTION
+&none            &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp COLON      &tap_bracket_left  &tap_bracket_right  &kp PERCENT   &none
+&none            &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp SEMICOLON  &kp LEFT_BRACE     &kp RIGHT_BRACE     &kp AT        &none
+                                             &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI    &trans         &trans         &trans
             >;
 
             label = "SYM";
