@@ -138,10 +138,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                 &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S      &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
-&tap_shift  &kp Z  &kp X                 &kp C                 &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &tap_shift
-                                         &kp LS(LA(LC(LGUI)))  &lt 3 LG(SPACE)   &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
+&kp ESC     &kp Q  &kp W                 &kp F                            &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                 &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                            &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &tap_shift
+                                         &mt LS(LA(LC(LCTRL))) LG(SPACE)  &lt 3 TAB         &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
