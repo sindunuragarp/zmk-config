@@ -103,6 +103,13 @@
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
 
+        tap_symbol: tap_symbol {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SYMBOL";
+            #binding-cells = <0>;
+            bindings = <&sl 2>, <&tog 2>;
+        };
+
         tap_bracket_left: tap_bracket_left {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_BRACKET_LEFT";
@@ -115,13 +122,6 @@
             label = "TAP_BRACKET_RIGHT";
             #binding-cells = <0>;
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
-        };
-
-        tap_symbol: tap_symbol {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_SYMBOL";
-            #binding-cells = <0>;
-            bindings = <&sl 2>, <&tog 2>;
         };
     };
 
