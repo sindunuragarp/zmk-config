@@ -176,7 +176,7 @@
             bindings = <
 &kp QUESTION     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8        &kp NUMBER_9     &kp NUMBER_0  &trans
 &kp EXCLAMATION  &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH              &kp AMPERSAND  &kp COLON      &tap_bracket_left   &kp LEFT_BRACE   &kp PERCENT   &trans
-&trans           &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR            &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp AT        &trans
+&sk LEFT_SHIFT   &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR            &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp AT        &sk LEFT_SHIFT
                                              &kp LCTRL         &kp LEFT_ALT  &mt LEFT_GUI SPACE    &trans         &trans         &trans
             >;
 
