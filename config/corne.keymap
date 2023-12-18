@@ -72,7 +72,7 @@
         shift_comma: shift_comma {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_COMMA";
-            bindings = <&kp COMMA>, <&kp EXCLAMATION>;
+            bindings = <&kp COMMA>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -81,7 +81,7 @@
         shift_dot: shift_dot {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_DOT";
-            bindings = <&kp PERIOD>, <&kp QUESTION>;
+            bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
