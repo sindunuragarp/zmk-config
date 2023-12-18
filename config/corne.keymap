@@ -120,7 +120,7 @@
         hold_tap_shift: hold_tap_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_SHIFT";
-            bindings = <&mo>, <&caps_word>;
+            bindings = <&mo>, <&tap_shift>;
 
             #binding-cells = <2>;
             flavor = "hold-preferred";
