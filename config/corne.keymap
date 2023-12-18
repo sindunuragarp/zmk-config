@@ -161,6 +161,8 @@
 &trans  &kp Z  &kp X          &kp C             &kp V             &kp B     &kp N   &kp M             &trans            &trans         &trans     &trans
                               &trans            &trans            &trans    &trans  &trans            &trans
             >;
+
+            label = "QWERTY";
         };
 
         symbol_layer {
