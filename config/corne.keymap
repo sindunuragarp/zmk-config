@@ -117,14 +117,11 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
         };
 
-        hold_tap_caps: hold_tap_caps {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_CAPS";
-            bindings = <&mo>, <&caps_word>;
-
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+        tap_symbol: tap_symbol {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SYMBOL";
+            #binding-cells = <0>;
+            bindings = <&sl 2>, <&tog 2>;
         };
     };
 
@@ -148,10 +145,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC             &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB             &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
-&hold_tap_caps 2 0  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &hold_tap_caps 2 0
-                                                 &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 3 TAB         &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
+&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &tap_symbol
+                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 3 TAB         &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
@@ -176,7 +173,7 @@
             bindings = <
 &kp QUESTION     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8        &kp NUMBER_9     &kp NUMBER_0  &trans
 &kp EXCLAMATION  &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH              &kp AMPERSAND  &kp COLON      &tap_bracket_left   &kp LEFT_BRACE   &kp PERCENT   &trans
-&sk LEFT_SHIFT   &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR            &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp AT        &sk LEFT_SHIFT
+&trans           &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR            &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp AT        &trans
                                              &kp LCTRL         &kp LEFT_ALT  &mt LEFT_GUI SPACE    &trans         &trans         &trans
             >;
 
