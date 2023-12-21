@@ -185,7 +185,7 @@
 &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8        &kp NUMBER_9     &kp UNDERSCORE  &kp TILDE
 &kp EXCLAMATION  &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp COLON      &tap_bracket_left   &kp LEFT_BRACE   &kp PERCENT     &kp DOUBLE_QUOTES
 &kp QUESTION     &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp BACKSLASH   &kp AT_SIGN
-                                             &sk LEFT_ALT      &mo 2         &trans          &trans         &trans         &sk LEFT_ALT
+                                             &sk LEFT_ALT      &sl 2         &trans          &trans         &trans         &sk LEFT_ALT
             >;
 
             label = "SYM";
