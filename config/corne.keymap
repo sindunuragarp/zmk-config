@@ -124,10 +124,10 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
         };
 
-        layer_tap_symbol: layer_tap_symbol {
+        ht_layer: ht_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_SYMBOL";
-            bindings = <&mo>, <&tap_symbol>;
+            label = "HT_LAYER";
+            bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -154,10 +154,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                           &kp P                  &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T       &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
-&tap_shift  &kp Z  &kp X                 &kp C                           &kp D                  &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &kp AT_SIGN
-                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &layer_tap_symbol 3 2  &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
+&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &kp AT_SIGN
+                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &ht_layer 3 2     &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
@@ -184,8 +184,8 @@
             bindings = <
 &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8        &kp NUMBER_9     &kp UNDERSCORE  &kp TILDE
 &kp EXCLAMATION  &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp COLON      &tap_bracket_left   &kp LEFT_BRACE   &kp PERCENT     &kp DOUBLE_QUOTES
-&kp QUESTION     &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp BACKSLASH   &username
-                                             &sk LEFT_ALT      &trans        &trans          &trans         &trans         &sk LEFT_ALT
+&kp QUESTION     &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp BACKSLASH   &kp AT_SIGN
+                                             &sk LEFT_ALT      &mo 2         &trans          &trans         &trans         &sk LEFT_ALT
             >;
 
             label = "SYM";
