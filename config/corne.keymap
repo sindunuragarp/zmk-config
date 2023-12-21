@@ -127,7 +127,7 @@
         layer_tap_symbol: layer_tap_symbol {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_SYMBOL";
-            bindings = <&to>, <&tap_symbol>;
+            bindings = <&mo>, <&tap_symbol>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
