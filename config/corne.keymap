@@ -182,10 +182,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none  &kp PERCENT      &kp LESS_THAN  &kp GREATER_THAN  &kp HASH      &kp AT         &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none  &none
-&trans  &none  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL     &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
-&trans  &none  &kp CARET        &kp SLASH      &kp ASTERISK      &kp DOLLAR    &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &none
-                                &sk LEFT_ALT   &trans            &trans        &sl 3          &trans                &sk LEFT_ALT
+&trans        &none  &kp PERCENT      &kp LESS_THAN  &kp GREATER_THAN  &kp HASH      &kp AT         &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none  &none
+&trans        &none  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL     &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
+&sk LEFT_ALT  &none  &kp CARET        &kp SLASH      &kp ASTERISK      &kp DOLLAR    &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &none
+                                      &trans         &trans            &trans        &sl 3          &trans                &trans
             >;
 
             label = "SYM";
@@ -210,10 +210,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LG(GRAVE)   &kp F1     &kp F2     &kp F3        &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &none  &kp LG(LA(RIGHT))
-&kp LG(TAB)     &kp F6     &kp F7     &kp F8        &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &none  &kp LG(LA(LEFT))
-&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)  &kp LG(A)    &kp LS(LA(LC(LG(SPACE))))  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                      &sk LEFT_GUI  &trans     &trans       &trans                     &trans        &sk LEFT_GUI
+&kp LG(GRAVE)   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &none  &kp LG(LA(RIGHT))
+&kp LG(TAB)     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &none  &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)    &kp LS(LA(LC(LG(SPACE))))  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
+                                      &trans     &trans     &trans       &kp LGUI                   &kp LALT      &kp LCTRL
             >;
 
             label = "NAV";
