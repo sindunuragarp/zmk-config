@@ -154,9 +154,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J  &kp L             &kp U             &kp Y                 &kp MINUS  &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M  &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O      &kp APOSTROPHE
-&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K  &kp H             &shift_comma      &shift_dot            &kp COLON  &shift_slash
+&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J  &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M  &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K  &kp H             &shift_comma      &shift_dot            &shift_slash  &kp COLON
                                          &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 ENTER       &mt LEFT_SHIFT SPACE    &sl 2  &kp BACKSPACE     &kp DELETE
             >;
 
