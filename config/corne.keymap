@@ -13,18 +13,18 @@
         compatible = "zmk,combos";
 
         activate_config_layer {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <37 40>;
             layers = <0>;
         };
 
         activate_config_layer_left {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <36 37 38>;
         };
 
         activate_config_layer_right {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <39 40 41>;
         };
 
@@ -154,10 +154,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
-&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &kp AT_SIGN
-                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &ht_layer 3 2     &mt LEFT_SHIFT SPACE    &lt 2 ENTER  &kp BACKSPACE     &kp DELETE
+&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J  &kp L             &kp U             &kp Y                 &kp MINUS  &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M  &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O      &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K  &kp H             &shift_comma      &shift_dot            &kp COLON  &shift_slash
+                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 ENTER       &mt LEFT_SHIFT SPACE    &sl 2  &kp BACKSPACE     &kp DELETE
             >;
 
             label = "HOME";
@@ -182,13 +182,24 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8        &kp NUMBER_9     &kp UNDERSCORE  &kp TILDE
-&kp EXCLAMATION  &kp CARET     &kp LT        &kp GREATER_THAN  &kp EQUAL     &kp HASH        &kp AMPERSAND  &kp COLON      &tap_bracket_left   &kp LEFT_BRACE   &kp PERCENT     &kp DOUBLE_QUOTES
-&kp QUESTION     &kp SLASH     &kp MINUS     &kp PLUS          &kp ASTERISK  &kp DOLLAR      &kp PIPE       &kp SEMICOLON  &tap_bracket_right  &kp RIGHT_BRACE  &kp BACKSLASH   &kp AT_SIGN
-                                             &sk LEFT_ALT      &sl 2         &trans          &trans         &trans         &sk LEFT_ALT
+&trans  &kp QUESTION     &kp LESS_THAN  &kp GREATER_THAN  &kp COLON  &kp PERCENT    &kp AT         &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none  &none
+&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL  &kp HASH       &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
+&trans  &kp PERIOD       &kp SLASH      &kp ASTERISK      &kp CARET  &kp DOLLAR     &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &none
+                                        &sk LEFT_ALT      &trans     &trans         &sl 3          &trans                &sk LEFT_ALT
             >;
 
             label = "SYM";
+        };
+
+        numpad_layer {
+            bindings = <
+&trans  &kp HASH      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT    &none   &none     &none     &none      &none      &none
+&trans  &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp N6        &kp PLUS       &none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none
+&trans  &kp SLASH     &kp N1        &kp N2        &kp N3        &kp MINUS      &none   &none     &none     &none      &none      &none
+                                    &kp DOT       &kp NUMBER_0  &trans         &trans  &trans    &trans
+            >;
+
+            label = "NUM";
         };
 
         navigation_layer {
@@ -213,7 +224,7 @@
 &sys_reset   &none  &none  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_CLR      &kp C_PLAY_PAUSE  &kp C_PREV            &kp C_NEXT            &none  &none  &sys_reset
 &none        &none  &none  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4    &kp C_MUTE        &kp C_VOL_DN          &kp C_VOL_UP          &none  &none  &none
 &bootloader  &none  &none  &none         &kp LG(LC(Q))  &kp C_POWER     &none             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none  &bootloader
-                           &tog 4        &tog 4         &tog 4          &tog 4            &tog 4                &tog 4
+                           &tog 5        &tog 5         &tog 5          &tog 5            &tog 5                &tog 5
             >;
 
             label = "CONF";
