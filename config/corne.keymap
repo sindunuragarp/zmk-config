@@ -105,6 +105,15 @@
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
+        shift_backspace: shift_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_BACKSPACE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         tap_shift: tap_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_SHIFT";
@@ -140,15 +149,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-
-        shift_backspace: shift_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_BACKSPACE";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         ht_backspace: ht_backspace {
