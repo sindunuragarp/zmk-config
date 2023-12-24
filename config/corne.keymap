@@ -72,7 +72,7 @@
         shift_comma: shift_comma {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_COMMA";
-            bindings = <&kp COMMA>, <&kp QUESTION>;
+            bindings = <&kp COMMA>, <&kp EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -81,7 +81,7 @@
         shift_dot: shift_dot {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_DOT";
-            bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -182,10 +182,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none  &kp PERCENT              &kp LESS_THAN         &kp GREATER_THAN     &kp HASH      &kp AT         &tap_bracket_left                &tap_bracket_right                &none      &none  &none
-&trans  &none  &hrml LCTRL EXCLAMATION  &hrml LEFT_ALT MINUS  &hrml LEFT_GUI PLUS  &kp EQUAL     &kp COLON      &hrmr LEFT_GUI LEFT_PARENTHESIS  &hrmr LEFT_ALT RIGHT_PARENTHESIS  &kp LCTRL  &none  &none
-&trans  &none  &kp CARET                &kp SLASH             &kp ASTERISK         &kp DOLLAR    &kp SEMICOLON  &kp AMPERSAND                    &kp PIPE                          &none      &none  &none
-                                        &trans                &trans               &trans        &trans         &trans                           &trans
+&trans  &kp PERCENT      &kp LESS_THAN      &kp GREATER_THAN     &kp AT_SIGN           &kp PERIOD    &kp AMPERSAND  &kp DOLLAR            &kp LEFT_BRACE                   &kp RIGHT_BRACE                &none  &none
+&trans  &kp EXCLAMATION  &hrml LCTRL MINUS  &hrml LEFT_ALT PLUS  &hrml LEFT_GUI EQUAL  &kp HASH      &kp PIPE       &hrmr LEFT_GUI COLON  &hrmr LEFT_ALT LEFT_PARENTHESIS  &hrmr LCTRL RIGHT_PARENTHESIS  &none  &none
+&trans  &kp TILDE        &kp SLASH          &kp ASTERISK         &kp CARET             &none         &none          &kp SEMICOLON         &kp LEFT_BRACKET                 &kp RIGHT_BRACKET              &none  &none
+                                            &trans               &trans                &trans        &trans         &trans                &trans
             >;
 
             label = "SYM";
