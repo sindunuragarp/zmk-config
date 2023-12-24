@@ -211,9 +211,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PERCENT      &kp LESS_THAN         &kp GREATER_THAN        &kp AT_SIGN              &kp PERIOD    &kp AMPERSAND  &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none  &none
-&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH      &kp PIPE       &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &none  &none
-&trans  &kp TILDE        &kp SLASH             &kp ASTERISK            &kp CARET                &none         &none          &kp SEMICOLON            &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none  &none
+&trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp AT_SIGN              &kp PERIOD    &kp AMPERSAND  &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none        &none
+&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH      &kp PIPE       &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp PERCENT  &none
+&trans  &none            &kp SLASH             &kp ASTERISK            &kp CARET                &none         &none          &kp SEMICOLON            &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none        &none
                                                &trans                  &trans                   &trans        &trans         &trans                   &trans
             >;
 
