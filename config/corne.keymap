@@ -141,6 +141,24 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        shift_backspace: shift_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_BACKSPACE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ht_backspace: ht_backspace {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_BACKSPACE";
+            bindings = <&mo>, <&shift_backspace>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -163,10 +181,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J      &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M      &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
-&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K      &kp H             &shift_comma      &shift_dot            &shift_slash  &shift_colon
-                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB         &mt LEFT_SHIFT SPACE    &kp ENTER  &lt 2 BACKSPACE   &lt 3 DELETE
+&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J      &kp L              &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M      &hrmr LEFT_GUI N   &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K      &kp H              &shift_comma      &shift_dot            &shift_slash  &shift_colon
+                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB         &mt LEFT_SHIFT SPACE    &kp ENTER  &ht_backspace 2 0  &mo 3
             >;
 
             label = "HOME";
