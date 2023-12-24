@@ -40,7 +40,7 @@
     };
 
     behaviors {
-        hrmr: hrmr {
+        hrr_mod: hrr_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "Home Row Mods - Right";
             bindings = <&kp>, <&kp>;
@@ -55,7 +55,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        hrml: hrml {
+        hrl_mod: hrl_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "Home Row Mods - Left";
             bindings = <&kp>, <&kp>;
@@ -132,6 +132,35 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACKET>;
         };
+
+        hrr_layer: hrr_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Home Row Layer - Right";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-on-release;
+            retro-tap;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 3 36 37 38 39 40 41>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+        };
+
+        hrl_layer: hrl_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Home Row Layer - Left";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+        };
     };
 
     macros {
@@ -154,10 +183,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J        &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M        &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
-&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K        &kp H             &shift_comma      &shift_dot            &shift_slash  &shift_colon
-                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB         &mt LEFT_SHIFT SPACE    &lt 3 ENTER  &lt 2 BACKSPACE   &kp DELETE
+&kp ESC     &kp Q           &kp W                    &kp F                           &kp P                &kp B                   &kp J        &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
+&kp TAB     &hrl_layer 2 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S             &hrl_mod LEFT_GUI T  &kp G                   &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 2 O  &kp APOSTROPHE
+&tap_shift  &kp Z           &kp X                    &kp C                           &kp D                &kp V                   &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &shift_colon
+                                                     &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB            &mt LEFT_SHIFT SPACE    &lt 3 ENTER  &lt 2 BACKSPACE      &kp DELETE
             >;
 
             label = "HOME";
@@ -165,10 +194,10 @@
 
         qwerty_layer {
             bindings = <
-&trans  &kp Q  &kp W          &kp E             &kp R             &kp T     &kp Y   &kp U             &kp I             &kp O          &kp P      &trans
-&trans  &kp A  &hrml LCTRL S  &hrml LEFT_ALT D  &hrml LEFT_GUI F  &kp G     &kp H   &hrmr LEFT_GUI J  &hrmr LEFT_ALT K  &hrmr LCTRL L  &kp MINUS  &trans
-&trans  &kp Z  &kp X          &kp C             &kp V             &kp B     &kp N   &kp M             &trans            &trans         &trans     &trans
-                              &trans            &trans            &trans    &trans  &trans            &trans
+&trans  &kp Q  &kp W             &kp E                &kp R                &kp T     &kp Y   &kp U                &kp I                &kp O             &kp P      &trans
+&trans  &kp A  &hrl_mod LCTRL S  &hrl_mod LEFT_ALT D  &hrl_mod LEFT_GUI F  &kp G     &kp H   &hrr_mod LEFT_GUI J  &hrr_mod LEFT_ALT K  &hrr_mod LCTRL L  &kp MINUS  &trans
+&trans  &kp Z  &kp X             &kp C                &kp V                &kp B     &kp N   &kp M                &trans               &trans            &trans     &trans
+                                 &trans               &trans               &trans    &trans  &trans               &trans
             >;
 
             label = "QWERTY";
@@ -182,10 +211,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PERCENT      &kp LESS_THAN      &kp GREATER_THAN     &kp AT_SIGN           &kp PERIOD    &kp AMPERSAND  &kp DOLLAR            &kp LEFT_BRACE                   &kp RIGHT_BRACE                &none  &none
-&trans  &kp EXCLAMATION  &hrml LCTRL MINUS  &hrml LEFT_ALT PLUS  &hrml LEFT_GUI EQUAL  &kp HASH      &kp PIPE       &hrmr LEFT_GUI COLON  &hrmr LEFT_ALT LEFT_PARENTHESIS  &hrmr LCTRL RIGHT_PARENTHESIS  &none  &none
-&trans  &kp TILDE        &kp SLASH          &kp ASTERISK         &kp CARET             &none         &none          &kp SEMICOLON         &kp LEFT_BRACKET                 &kp RIGHT_BRACKET              &none  &none
-                                            &trans               &trans                &trans        &trans         &trans                &trans
+&trans  &kp PERCENT      &kp LESS_THAN         &kp GREATER_THAN        &kp AT_SIGN              &kp PERIOD    &kp AMPERSAND  &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none  &none
+&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH      &kp PIPE       &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &none  &none
+&trans  &kp TILDE        &kp SLASH             &kp ASTERISK            &kp CARET                &none         &none          &kp SEMICOLON            &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none  &none
+                                               &trans                  &trans                   &trans        &trans         &trans                   &trans
             >;
 
             label = "SYM";
