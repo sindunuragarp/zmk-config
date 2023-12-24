@@ -184,7 +184,7 @@
 &kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J      &kp L              &kp U             &kp Y                 &kp MINUS     &kp GRAVE
 &kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M      &hrmr LEFT_GUI N   &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
 &tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K      &kp H              &shift_comma      &shift_dot            &shift_slash  &shift_colon
-                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB         &mt LEFT_SHIFT SPACE    &kp ENTER  &ht_backspace 2 0  &mo 3
+                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB         &mt LEFT_SHIFT SPACE    &kp ENTER  &ht_backspace 2 0  &sl 3
             >;
 
             label = "HOME";
@@ -220,10 +220,10 @@
 
         numpad_layer {
             bindings = <
-&trans  &none  &kp N1        &kp N2   &kp N3        &kp PLUS       &none   &none         &none         &none      &none  &none
-&trans  &none  &kp NUMBER_4  &kp N5   &kp NUMBER_6  &kp MINUS      &none   &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &none  &none
-&trans  &none  &kp N7        &kp N8   &kp N9        &kp PERCENT    &none   &none         &none         &none      &none  &none
-                             &kp DOT  &kp NUMBER_0  &trans         &trans  &trans        &trans
+&trans  &none  &kp N1        &kp N2   &kp N3        &kp PLUS       &none   &none             &none         &none      &none  &none
+&trans  &none  &kp NUMBER_4  &kp N5   &kp NUMBER_6  &kp MINUS      &none   &kp LEFT_GUI      &kp LEFT_ALT  &kp LCTRL  &none  &none
+&trans  &none  &kp N7        &kp N8   &kp N9        &kp PERCENT    &none   &none             &none         &none      &none  &none
+                             &kp DOT  &kp NUMBER_0  &trans         &trans  &shift_backspace  &trans
             >;
 
             label = "NUM";
