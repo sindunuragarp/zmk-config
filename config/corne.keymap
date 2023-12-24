@@ -163,10 +163,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J  &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
-&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M  &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
-&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K  &kp H             &shift_comma      &shift_dot            &shift_slash  &shift_colon
-                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 ENTER       &mt LEFT_SHIFT SPACE    &sl 2  &kp BACKSPACE     &lt 3 DELETE
+&kp ESC     &kp Q  &kp W                 &kp F                           &kp P             &kp B                   &kp J          &kp L             &kp U             &kp Y                 &kp MINUS     &kp GRAVE
+&kp TAB     &kp A  &hrml LEFT_CONTROL R  &hrml LEFT_ALT S                &hrml LEFT_GUI T  &kp G                   &kp M          &hrmr LEFT_GUI N  &hrmr LEFT_ALT E  &hrmr LEFT_CONTROL I  &kp O         &kp APOSTROPHE
+&tap_shift  &kp Z  &kp X                 &kp C                           &kp D             &kp V                   &kp K          &kp H             &shift_comma      &shift_dot            &shift_slash  &shift_colon
+                                         &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 ENTER       &mt LEFT_SHIFT SPACE    &kp BACKSPACE  &sl 2             &sl 3
             >;
 
             label = "HOME";
@@ -191,10 +191,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &none  &kp PERCENT      &kp LESS_THAN  &kp GREATER_THAN  &kp HASH      &kp AT         &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none  &none
-&trans        &none  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL     &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
-&sk LEFT_ALT  &none  &kp CARET        &kp SLASH      &kp ASTERISK      &kp DOLLAR    &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &none
-                                      &trans         &trans            &trans        &sl 3          &trans                &trans
+&trans  &none  &kp PERCENT              &kp LESS_THAN         &kp GREATER_THAN     &kp HASH      &kp AT         &kp LEFT_BRACE                   &kp RIGHT_BRACE                   &kp TILDE          &none  &none
+&trans  &none  &hrml LCTRL EXCLAMATION  &hrml LEFT_ALT MINUS  &hrml LEFT_GUI PLUS  &kp EQUAL     &kp AMPERSAND  &hrmr LEFT_GUI LEFT_PARENTHESIS  &hrmr LEFT_ALT RIGHT_PARENTHESIS  &hrmr LCTRL COLON  &none  &none
+&trans  &none  &kp CARET                &kp SLASH             &kp ASTERISK         &kp DOLLAR    &kp PIPE       &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                 &kp SEMICOLON      &none  &none
+                                        &trans                &trans               &kp TAB       &kp DELETE     &trans                           &trans
             >;
 
             label = "SYM";
@@ -202,10 +202,10 @@
 
         numpad_layer {
             bindings = <
-&trans  &kp PERCENT  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp HASH        &none          &none     &none     &none      &none      &none
-&trans  &kp MINUS    &kp NUMBER_4  &kp N5        &kp N6        &kp PLUS        &kp BACKSPACE  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none
-&trans  &kp SLASH    &kp N1        &kp N2        &kp N3        &kp ASTERISK    &none          &none     &none     &none      &none      &none
-                                   &kp DOT       &kp NUMBER_0  &trans          &trans         &trans    &trans
+&trans  &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none      &none       &none         &none         &none      &none  &none
+&trans  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &none       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &none  &none
+&trans  &none  &kp N1        &kp N2        &kp NUMBER_3  &none      &none       &none         &none         &none      &none  &none
+                             &kp DOT       &kp NUMBER_0  &kp TAB    &kp DELETE  &trans        &trans
             >;
 
             label = "NUM";
@@ -222,7 +222,7 @@
 &kp LG(GRAVE)   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp PAGE_UP                &kp HOME      &kp UP        &kp END        &none  &kp LG(LA(RIGHT))
 &kp LG(TAB)     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10      &kp PAGE_DOWN              &kp LEFT      &kp DOWN      &kp RIGHT      &none  &kp LG(LA(LEFT))
 &kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(A)    &kp LS(LA(LC(LG(SPACE))))  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                      &trans     &trans     &trans       &kp LGUI                   &kp LALT      &kp LCTRL
+                                      &trans     &trans     &trans       &trans                     &trans        &trans
             >;
 
             label = "NAV";
