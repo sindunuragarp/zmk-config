@@ -220,10 +220,10 @@
 
         numpad_layer {
             bindings = <
-&trans  &kp N1  &kp N2     &kp N3        &kp N4        &kp N5    &kp N6  &kp N7            &kp N8        &kp N9     &kp N0  &none
-&trans  &none   &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &none     &none   &kp LEFT_GUI      &kp LEFT_ALT  &kp LCTRL  &none   &none
-&trans  &none   &none      &none         &none         &none     &none   &none             &none         &none      &none   &none
-                           &trans        &trans        &trans    &trans  &shift_backspace  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7            &kp N8        &kp N9     &kp N0  &none
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &none   &kp LEFT_GUI      &kp LEFT_ALT  &kp LCTRL  &none   &none
+&trans  &none   &none   &none   &none   &none     &none   &none             &none         &none      &none   &none
+                        &trans  &trans  &trans    &trans  &shift_backspace  &trans
             >;
 
             label = "NUM";
