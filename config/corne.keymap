@@ -162,7 +162,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_APP_VIEW";
             #binding-cells = <0>;
-            bindings = <&kp LC(UP_ARROW)>, <&kp LS(LA(LC(LG(SPACE))))>;
+            bindings = <&kp LC(DOWN_ARROW)>, <&kp LS(LA(LC(LG(SPACE))))>;
         };
     };
 
