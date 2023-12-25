@@ -181,7 +181,7 @@
             bindings = <
 &kp ESC     &kp Q           &kp W                    &kp F                           &kp P                &kp B                   &kp J        &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
 &kp TAB     &hrl_layer 2 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S             &hrl_mod LEFT_GUI T  &kp G                   &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 2 O  &kp APOSTROPHE
-&tap_shift  &kp Z           &kp X                    &kp C                           &kp D                &kp V                   &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &shift_colon
+&tap_shift  &kp Z           &kp X                    &kp C                           &kp D                &kp V                   &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &kp DOUBLE_QUOTES
                                                      &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB            &mt LEFT_SHIFT SPACE    &lt 3 ENTER  &kp BACKSPACE        &kp DELETE
             >;
 
@@ -207,9 +207,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp AT_SIGN              &kp PERCENT    &kp AMPERSAND  &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &none
-&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH       &kp PIPE       &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &none
-&trans  &none            &kp SLASH             &kp ASTERISK            &kp CARET                &none          &none          &kp PERIOD               &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &none
+&trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp AT_SIGN              &kp PERCENT    &kp AMPERSAND  &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &trans
+&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH       &kp PIPE       &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &trans
+&trans  &none            &kp SLASH             &kp ASTERISK            &kp CARET                &none          &none          &kp PERIOD               &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &trans
                                                &trans                  &trans                   &trans         &trans         &trans                   &trans
             >;
 
