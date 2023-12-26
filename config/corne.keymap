@@ -124,7 +124,7 @@
         shift_colon: shift_colon {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_COLON";
-            bindings = <&kp COLON>, <&kp SEMICOLON>;
+            bindings = <&kp COLON>, <&kp AT_SIGN>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -182,7 +182,7 @@
             bindings = <
 &kp ESC     &kp Q           &kp W                    &kp F                           &kp P                &kp B                   &kp J        &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
 &kp TAB     &hrl_layer 2 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S             &hrl_mod LEFT_GUI T  &kp G                   &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 2 O  &kp APOSTROPHE
-&tap_shift  &kp Z           &kp X                    &kp C                           &kp D                &kp V                   &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &kp AT_SIGN
+&tap_shift  &kp Z           &kp X                    &kp C                           &kp D                &kp V                   &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &shift_colon
                                                      &mt LS(LA(LC(LGUI))) LG(SPACE)  &lt 4 TAB            &mt LEFT_SHIFT SPACE    &lt 3 ENTER  &kp BACKSPACE        &kp DELETE
             >;
 
