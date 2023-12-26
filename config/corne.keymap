@@ -224,10 +224,10 @@
 
         navigation_layer {
             bindings = <
-&kp LG(GRAVE)   &kp F1     &kp F2             &kp F3                &kp F4                &kp F5       &kp PAGE_UP    &kp HOME       &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
-&kp LG(TAB)     &kp F6     &hrl_mod LCTRL F7  &hrl_mod LEFT_ALT F8  &hrl_mod LEFT_GUI F9  &kp F10      &kp PAGE_DOWN  &kp LEFT       &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
-&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)          &kp LG(C)             &kp LG(V)             &kp LG(A)    &none          &kp LC(LEFT)   &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                              &trans                &trans                &trans       &kp TAB        &kp BACKSPACE  &kp DELETE
+&kp LG(GRAVE)   &kp F1     &kp F2             &kp F3                &kp F4                &kp F5       &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
+&kp LG(TAB)     &kp F6     &hrl_mod LCTRL F7  &hrl_mod LEFT_ALT F8  &hrl_mod LEFT_GUI F9  &kp F10      &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)          &kp LG(C)             &kp LG(V)             &kp LG(A)    &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
+                                              &trans                &trans                &trans       &trans         &trans        &trans
             >;
 
             label = "NAV";
@@ -242,6 +242,15 @@
             >;
 
             label = "CONF";
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
