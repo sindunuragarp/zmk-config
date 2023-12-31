@@ -157,7 +157,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_APP_VIEW";
             #binding-cells = <0>;
-            bindings = <&kp LC(DOWN_ARROW)>, <&kp LS(LA(LC(LG(SPACE))))>;
+            bindings = <&kp LC(DOWN_ARROW)>, <&kp LA(LC(LG(SPACE)))>;
         };
 
         ht_sticky: ht_sticky {
