@@ -136,7 +136,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_SYMBOL";
             #binding-cells = <0>;
-            bindings = <&sl 2>, <&tog 2>;
+            bindings = <&sl 3>, <&tog 3>;
         };
 
         tap_bracket_left: tap_bracket_left {
@@ -195,9 +195,9 @@
         home_layer {
             bindings = <
 &kp ESC                     &kp Q           &kp W                    &kp F                       &kp P                    &kp B        &kp J        &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
-&kp TAB                     &hrl_layer 2 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &kp G        &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 2 O  &kp APOSTROPHE
+&kp TAB                     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &kp G        &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
 &ht_caps_word LEFT_SHIFT 0  &kp Z           &kp X                    &kp C                       &kp D                    &kp V        &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &shift_colon
-                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE    &lt 3 ENTER  &kp BACKSPACE        &kp DELETE
+                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE    &lt 4 ENTER  &kp BACKSPACE        &kp DELETE
             >;
 
             label = "HOME";
@@ -216,10 +216,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp CARET                &kp PERCENT    &kp AMPERSAND  &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &trans
-&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH       &kp PIPE       &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
-&trans  &none            &kp SLASH             &kp ASTERISK            &none                    &none          &none          &none                    &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &kp AT_SIGN
-                                               &trans                  &trans                   &trans         &trans         &trans                   &trans
+&trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp PERCENT              &none       &none          &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &trans
+&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH    &kp AMPERSAND  &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
+&trans  &none            &kp SLASH             &kp ASTERISK            &kp CARET                &none       &none          &kp PIPE                 &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &kp AT_SIGN
+                                               &trans                  &trans                   &trans      &trans         &trans                   &trans
             >;
 
             label = "SYM";
