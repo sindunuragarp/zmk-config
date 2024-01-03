@@ -227,10 +227,10 @@
 
         number_layer {
             bindings = <
-&trans  &kp N1      &kp N2     &kp N3        &kp N4     &kp N5      &none   &none         &none         &none      &none  &none
-&trans  &kp N6      &kp N7     &kp N8        &kp N9     &kp N0      &none   &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &none  &none
-&trans  &kp PERIOD  &kp SLASH  &kp ASTERISK  &kp MINUS  &kp PLUS    &none   &none         &none         &none      &none  &none
-                               &trans        &trans     &trans      &trans  &trans        &trans
+&trans  &kp N1      &kp N2             &kp N3                &kp N4                &kp N5      &kp F1   &kp F2                &kp F3                &kp F4             &kp F5   &none
+&trans  &kp N6      &hrl_mod LCTRL N7  &hrl_mod LEFT_ALT N8  &hrl_mod LEFT_GUI N9  &kp N0      &kp F6   &hrr_mod LEFT_GUI F7  &hrr_mod LEFT_ALT F8  &hrr_mod LCTRL F9  &kp F10  &none
+&trans  &kp PERIOD  &kp SLASH          &kp ASTERISK          &kp MINUS             &kp PLUS    &kp F11  &kp F12               &kp F13               &kp F14            &kp F15  &none
+                                       &trans                &trans                &trans      &trans   &trans                &trans
             >;
 
             label = "NUM";
@@ -238,10 +238,10 @@
 
         navigation_layer {
             bindings = <
-&kp LG(GRAVE)   &kp F1     &kp F2             &kp F3                &kp F4                &kp F5       &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
-&kp LG(TAB)     &kp F6     &hrl_mod LCTRL F7  &hrl_mod LEFT_ALT F8  &hrl_mod LEFT_GUI F9  &kp F10      &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
-&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)          &kp LG(C)             &kp LG(V)             &kp LG(A)    &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                              &trans                &trans                &trans       &trans         &trans        &trans
+&kp LG(GRAVE)   &kp F1     &kp F2                &kp LS(LA(F))            &kp LG(P)                &none     &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
+&kp LG(TAB)     &kp LG(A)  &hrl_mod LCTRL LG(S)  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &none     &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)             &kp LG(C)                &kp LG(V)                &none     &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
+                                                 &trans                   &trans                   &trans    &trans         &trans        &trans
             >;
 
             label = "NAV";
