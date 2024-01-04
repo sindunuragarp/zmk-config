@@ -136,7 +136,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_SYMBOL";
             #binding-cells = <0>;
-            bindings = <&sl 3>, <&tog 3>;
+            bindings = <&sl 2>, <&tog 2>;
         };
 
         tap_bracket_left: tap_bracket_left {
@@ -195,9 +195,9 @@
         home_layer {
             bindings = <
 &kp ESC                     &kp Q           &kp W                    &kp F                       &kp P                    &kp B        &kp J        &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
-&kp TAB                     &hrl_layer 2 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &kp G        &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 2 O  &kp APOSTROPHE
+&kp TAB                     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &kp G        &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
 &ht_caps_word LEFT_SHIFT 0  &kp Z           &kp X                    &kp C                       &kp D                    &kp V        &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &shift_colon
-                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE    &lt 3 ENTER  &kp BACKSPACE        &kp DELETE
+                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE    &lt 2 ENTER  &kp BACKSPACE        &kp DELETE
             >;
 
             label = "HOME";
@@ -214,6 +214,17 @@
             label = "QWERTY";
         };
 
+        number_layer {
+            bindings = <
+&trans  &kp N1           &kp N2             &kp N3                &kp N4                &kp N5      &kp F1   &kp F2                &kp F3                &kp F4             &kp F5            &none
+&trans  &hrl_layer 3 N6  &hrl_mod LCTRL N7  &hrl_mod LEFT_ALT N8  &hrl_mod LEFT_GUI N9  &kp N0      &kp F6   &hrr_mod LEFT_GUI F7  &hrr_mod LEFT_ALT F8  &hrr_mod LCTRL F9  &hrr_layer 3 F10  &none
+&trans  &kp COMMA        &kp SLASH          &kp ASTERISK          &kp MINUS             &kp PLUS    &kp F11  &kp F12               &kp F13               &kp F14            &kp F15           &none
+                                            &trans                &kp PERIOD            &trans      &trans   &trans                &trans
+            >;
+
+            label = "NUM";
+        };
+
         symbol_layer {
             bindings = <
 &trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp PERCENT              &none       &none          &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &trans
@@ -223,17 +234,6 @@
             >;
 
             label = "SYM";
-        };
-
-        number_layer {
-            bindings = <
-&trans  &kp N1      &kp N2             &kp N3                &kp N4                &kp N5      &kp F1   &kp F2                &kp F3                &kp F4             &kp F5   &none
-&trans  &kp N6      &hrl_mod LCTRL N7  &hrl_mod LEFT_ALT N8  &hrl_mod LEFT_GUI N9  &kp N0      &kp F6   &hrr_mod LEFT_GUI F7  &hrr_mod LEFT_ALT F8  &hrr_mod LCTRL F9  &kp F10  &none
-&trans  &kp PERIOD  &kp SLASH          &kp ASTERISK          &kp MINUS             &kp PLUS    &kp F11  &kp F12               &kp F13               &kp F14            &kp F15  &none
-                                       &trans                &trans                &trans      &trans   &trans                &trans
-            >;
-
-            label = "NUM";
         };
 
         navigation_layer {
