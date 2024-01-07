@@ -194,10 +194,10 @@
 
         home_layer {
             bindings = <
-&kp ESC                     &kp Q           &kp W                    &kp F                       &kp P                    &kp B        &kp J        &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
-&kp TAB                     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &kp G        &kp M        &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
-&ht_caps_word LEFT_SHIFT 0  &kp Z           &kp X                    &kp C                       &kp D                    &kp V        &kp K        &kp H                &shift_comma         &shift_dot               &shift_slash    &shift_colon
-                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE    &lt 2 ENTER  &kp BACKSPACE        &kp DELETE
+&kp ESC                     &kp Q           &kp W                    &kp F                       &kp P                    &kp B                    &kp J                  &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
+&kp TAB                     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
+&ht_caps_word LEFT_SHIFT 0  &kp Z           &kp X                    &kp C                       &kp D                    &kp V                    &kp K                  &kp H                &shift_comma         &shift_dot               &shift_slash    &shift_colon
+                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE                &lt 2 ENTER            &kp BACKSPACE        &kp DELETE
             >;
 
             label = "HOME";
@@ -205,10 +205,10 @@
 
         qwerty_layer {
             bindings = <
-&trans  &kp Q  &kp W             &kp E                &kp R                &kp T     &kp Y   &kp U                &kp I                &kp O             &kp P      &trans
-&trans  &kp A  &hrl_mod LCTRL S  &hrl_mod LEFT_ALT D  &hrl_mod LEFT_GUI F  &kp G     &kp H   &hrr_mod LEFT_GUI J  &hrr_mod LEFT_ALT K  &hrr_mod LCTRL L  &kp MINUS  &trans
-&trans  &kp Z  &kp X             &kp C                &kp V                &kp B     &kp N   &kp M                &trans               &trans            &trans     &trans
-                                 &trans               &trans               &trans    &trans  &trans               &trans
+&trans  &kp Q           &kp W             &kp E                &kp R                &kp T                    &kp Y                  &kp U                &kp I                &kp O             &kp P               &trans
+&trans  &hrl_layer 3 A  &hrl_mod LCTRL S  &hrl_mod LEFT_ALT D  &hrl_mod LEFT_GUI F  &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT H  &hrr_mod LEFT_GUI J  &hrr_mod LEFT_ALT K  &hrr_mod LCTRL L  &hrr_layer 3 MINUS  &trans
+&trans  &kp Z           &kp X             &kp C                &kp V                &kp B                    &kp N                  &kp M                &trans               &trans            &trans              &trans
+                                          &trans               &trans               &trans                   &trans                 &trans               &trans
             >;
 
             label = "QWERTY";
@@ -216,10 +216,10 @@
 
         number_layer {
             bindings = <
-&trans  &kp N1           &kp N2             &kp N3                &kp N4                &kp N5      &kp F1   &kp F2                &kp F3                &kp F4             &kp F5            &none
-&trans  &hrl_layer 3 N6  &hrl_mod LCTRL N7  &hrl_mod LEFT_ALT N8  &hrl_mod LEFT_GUI N9  &kp N0      &kp F6   &hrr_mod LEFT_GUI F7  &hrr_mod LEFT_ALT F8  &hrr_mod LCTRL F9  &hrr_layer 3 F10  &none
-&trans  &kp COMMA        &kp SLASH          &kp ASTERISK          &kp MINUS             &kp PLUS    &kp F11  &kp F12               &kp F13               &kp F14            &kp F15           &none
-                                            &trans                &kp PERIOD            &trans      &trans   &trans                &trans
+&trans  &kp N1           &kp N2             &kp N3                &kp N4                &kp N5                    &kp F1                  &kp F2                &kp F3                &kp F4             &kp F5            &none
+&trans  &hrl_layer 3 N6  &hrl_mod LCTRL N7  &hrl_mod LEFT_ALT N8  &hrl_mod LEFT_GUI N9  &hrl_mod LEFT_SHIFT N0    &hrr_mod LEFT_SHIFT F6  &hrr_mod LEFT_GUI F7  &hrr_mod LEFT_ALT F8  &hrr_mod LCTRL F9  &hrr_layer 3 F10  &none
+&trans  &kp COMMA        &kp SLASH          &kp ASTERISK          &kp MINUS             &kp PLUS                  &kp F11                 &kp F12               &kp F13               &kp F14            &kp F15           &none
+                                            &trans                &kp PERIOD            &trans                    &trans                  &trans                &trans
             >;
 
             label = "NUM";
@@ -227,10 +227,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp PERCENT              &none       &none          &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &trans
-&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &kp HASH    &kp AMPERSAND  &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
-&trans  &none            &kp SLASH             &kp ASTERISK            &kp CARET                &none       &none          &kp PIPE                 &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &kp AT_SIGN
-                                               &trans                  &trans                   &trans      &trans         &trans                   &trans
+&trans  &none            &kp LESS_THAN         &kp GREATER_THAN        &kp PERCENT              &none                       &none                          &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &trans
+&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &hrl_mod LEFT_SHIFT HASH    &hrr_mod LEFT_SHIFT AMPERSAND  &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
+&trans  &none            &kp SLASH             &kp ASTERISK            &kp CARET                &none                       &none                          &kp PIPE                 &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &kp AT_SIGN
+                                               &trans                  &trans                   &trans                      &trans                         &trans                   &trans
             >;
 
             label = "SYM";
@@ -238,10 +238,10 @@
 
         navigation_layer {
             bindings = <
-&kp LG(GRAVE)   &kp F1     &kp F2                &kp LS(LA(F))            &kp LG(LS(P))            &none     &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
-&kp LG(TAB)     &kp LG(A)  &hrl_mod LCTRL LG(S)  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &none     &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
-&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)             &kp LG(C)                &kp LG(V)                &none     &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                                 &trans                   &trans                   &trans    &trans         &trans        &trans
+&kp LG(GRAVE)   &kp F1     &kp F2                &kp LS(LA(F))            &kp LG(LS(P))            &none             &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
+&kp LG(TAB)     &kp LG(A)  &hrl_mod LCTRL LG(S)  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &kp LEFT_SHIFT    &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)             &kp LG(C)                &kp LG(V)                &none             &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
+                                                 &trans                   &trans                   &trans            &trans         &trans        &trans
             >;
 
             label = "NAV";
