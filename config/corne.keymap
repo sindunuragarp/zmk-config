@@ -33,52 +33,52 @@
             key-positions = <0 11>;
         };
 
-        num_1 {
+        chord_num_1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <1 13>;
         };
 
-        num_2 {
+        chord_num_2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <2 14>;
         };
 
-        num_3 {
+        chord_num_3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <3 15>;
         };
 
-        num_4 {
+        chord_num_4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <4 16>;
         };
 
-        num_5 {
+        chord_num_5 {
             bindings = <&kp NUMBER_5>;
             key-positions = <5 17>;
         };
 
-        num_6 {
+        chord_num_6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <6 18>;
         };
 
-        num_7 {
+        chord_num_7 {
             bindings = <&kp NUMBER_7>;
             key-positions = <7 19>;
         };
 
-        num_8 {
+        chord_num_8 {
             bindings = <&kp NUMBER_8>;
             key-positions = <8 20>;
         };
 
-        num_9 {
+        chord_num_9 {
             bindings = <&kp NUMBER_9>;
             key-positions = <9 21>;
         };
 
-        num_0 {
+        chord_num_0 {
             bindings = <&kp NUMBER_0>;
             key-positions = <10 22>;
         };
