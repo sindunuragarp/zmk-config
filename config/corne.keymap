@@ -28,7 +28,7 @@
             key-positions = <39 40 41>;
         };
 
-        toggle_qwerty {
+        toggle_alt_layout {
             bindings = <&tog 1>;
             key-positions = <0 11>;
         };
@@ -203,15 +203,15 @@
             label = "HOME";
         };
 
-        qwerty_layer {
+        alt_layer {
             bindings = <
-&trans  &kp Q           &kp W             &kp E                &kp R                &kp T                    &kp Y                  &kp U                &kp I                &kp O             &kp P               &trans
-&trans  &hrl_layer 3 A  &hrl_mod LCTRL S  &hrl_mod LEFT_ALT D  &hrl_mod LEFT_GUI F  &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT H  &hrr_mod LEFT_GUI J  &hrr_mod LEFT_ALT K  &hrr_mod LCTRL L  &hrr_layer 3 MINUS  &trans
-&trans  &kp Z           &kp X             &kp C                &kp V                &kp B                    &kp N                  &kp M                &trans               &trans            &trans              &trans
+&trans  &kp W           &kp L             &kp Y                &kp P                &kp B                    &kp Z                  &kp F                &kp O                &kp U             &trans          &trans
+&trans  &hrl_layer 3 C  &hrl_mod LCTRL R  &hrl_mod LEFT_ALT S  &hrl_mod LEFT_GUI T  &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LCTRL I  &hrr_layer 3 A  &trans
+&trans  &kp Q           &kp J             &kp V                &kp D                &kp K                    &kp X                  &kp H                &trans               &trans            &trans          &trans
                                           &trans               &trans               &trans                   &trans                 &trans               &trans
             >;
 
-            label = "QWERTY";
+            label = "ALT";
         };
 
         number_layer {
