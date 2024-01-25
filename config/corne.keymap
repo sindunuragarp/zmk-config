@@ -226,10 +226,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        shift_colon: shift_colon {
+        shift_backspace: shift_backspace {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_COLON";
-            bindings = <&kp COLON>, <&kp AT_SIGN>;
+            label = "SHIFT_BACKSPACE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -304,10 +304,10 @@
 
         home_layer {
             bindings = <
-&kp ESC                     &kp Q           &kp W                    &kp F                       &kp P                    &kp B                    &kp J                  &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
-&kp TAB                     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
-&ht_caps_word LEFT_SHIFT 0  &kp Z           &kp X                    &kp C                       &kp D                    &kp V                    &kp K                  &kp H                &shift_comma         &shift_dot               &shift_slash    &kp AT
-                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE                &lt 2 ENTER            &kp BACKSPACE        &kp DELETE
+&kp ESC                     &kp Q           &kp W                    &kp F                       &kp P                    &kp B                    &kp J                  &kp L                &kp U                       &kp Y                    &kp MINUS       &kp GRAVE
+&kp TAB                     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E         &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
+&ht_caps_word LEFT_SHIFT 0  &kp Z           &kp X                    &kp C                       &kp D                    &kp V                    &kp K                  &kp H                &shift_comma                &shift_dot               &shift_slash    &kp AT
+                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE                &lt 2 ENTER            &shift_backspace     &ht_caps_word LEFT_SHIFT 0
             >;
 
             label = "HOME";
