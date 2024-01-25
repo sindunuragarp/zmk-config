@@ -31,116 +31,139 @@
         toggle_alt_layout {
             bindings = <&tog 1>;
             key-positions = <0 11>;
+            layers = <5>;
         };
 
         chord_num_1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <13 1>;
+            layers = <0>;
         };
 
         chord_num_2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <14 2>;
+            layers = <0>;
         };
 
         chord_num_3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <15 3>;
+            layers = <0>;
         };
 
         chord_num_4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <16 4>;
+            layers = <0>;
         };
 
         chord_num_5 {
             bindings = <&kp NUMBER_5>;
             key-positions = <17 5>;
+            layers = <0>;
         };
 
         chord_num_6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <18 6>;
+            layers = <0>;
         };
 
         chord_num_7 {
             bindings = <&kp NUMBER_7>;
             key-positions = <19 7>;
+            layers = <0>;
         };
 
         chord_num_8 {
             bindings = <&kp NUMBER_8>;
             key-positions = <20 8>;
+            layers = <0>;
         };
 
         chord_num_9 {
             bindings = <&kp NUMBER_9>;
             key-positions = <21 9>;
+            layers = <0>;
         };
 
         chord_num_0 {
             bindings = <&kp NUMBER_0>;
             key-positions = <22 10>;
+            layers = <0>;
         };
 
         chord_f1 {
             bindings = <&kp F1>;
-            key-positions = <0 12 37>;
+            key-positions = <0 12>;
+            layers = <4>;
         };
 
         chord_f2 {
             bindings = <&kp F2>;
-            key-positions = <1 13 37>;
+            key-positions = <1 13>;
+            layers = <4>;
         };
 
         chord_f3 {
             bindings = <&kp F3>;
-            key-positions = <2 14 37>;
+            key-positions = <2 14>;
+            layers = <4>;
         };
 
         chord_f4 {
             bindings = <&kp F4>;
-            key-positions = <3 15 37>;
+            key-positions = <3 15>;
+            layers = <4>;
         };
 
         chord_f5 {
             bindings = <&kp F5>;
-            key-positions = <4 16 37>;
+            key-positions = <4 16>;
+            layers = <4>;
         };
 
         chord_f6 {
             bindings = <&kp F6>;
-            key-positions = <5 17 37>;
+            key-positions = <5 17>;
+            layers = <4>;
         };
 
         chord_f7 {
             bindings = <&kp F7>;
-            key-positions = <6 18 37>;
+            key-positions = <6 18>;
+            layers = <4>;
         };
 
         chord_f8 {
             bindings = <&kp F8>;
-            key-positions = <7 19 37>;
+            key-positions = <7 19>;
+            layers = <4>;
         };
 
         chord_f9 {
             bindings = <&kp F9>;
-            key-positions = <8 20 37>;
+            key-positions = <8 20>;
+            layers = <4>;
         };
 
         chord_f10 {
             bindings = <&kp F10>;
-            key-positions = <9 21 37>;
+            key-positions = <9 21>;
+            layers = <4>;
         };
 
         chord_f11 {
             bindings = <&kp F11>;
-            key-positions = <10 22 37>;
+            key-positions = <10 22>;
+            layers = <4>;
         };
 
         chord_f12 {
             bindings = <&kp F12>;
-            key-positions = <11 23 37>;
+            key-positions = <11 23>;
+            layers = <4>;
         };
     };
 
