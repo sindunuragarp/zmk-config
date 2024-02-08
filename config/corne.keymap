@@ -243,7 +243,7 @@
         shift_slash: shift_slash {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_SLASH";
-            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+            bindings = <&kp SLASH>, <&kp AT_SIGN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -329,7 +329,7 @@
             bindings = <
 &kp ESC         &kp Q           &kp W                    &kp F                       &kp P                    &kp B                    &kp J                  &kp L                &kp U                       &kp Y                    &kp MINUS       &kp GRAVE
 &kp TAB         &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T      &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E         &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
-&kp LEFT_SHIFT  &kp Z           &kp X                    &kp C                       &kp D                    &kp V                    &kp K                  &kp H                &shift_comma                &shift_dot               &shift_slash    &kp AT
+&kp LEFT_SHIFT  &kp Z           &kp X                    &kp C                       &kp D                    &kp V                    &kp K                  &kp H                &shift_comma                &shift_dot               &shift_slash    &kp BACKSLASH
                                                          &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky 4 LEFT_SHIFT  &kp SPACE                &lt 2 ENTER            &kp BACKSPACE        &ht_caps_word LEFT_SHIFT 0
             >;
 
