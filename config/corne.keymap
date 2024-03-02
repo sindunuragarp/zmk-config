@@ -306,7 +306,7 @@
         ht_caps_word: ht_caps_word {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_CAPS_WORD";
-            bindings = <&mo>, <&caps_word>;
+            bindings = <&kp>, <&caps_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -337,10 +337,10 @@
 
         home_layer {
             bindings = <
-&kp ESC        &kp Q           &kp W                    &kp F                       &kp P                 &kp B                    &kp J                  &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
-&kp TAB        &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T   &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
-&kp BACKSLASH  &kp Z           &kp X                    &kp C                       &kp D                 &kp V                    &kp K                  &kp H                &shift_comma         &shift_dot               &shift_slash    &kp ENTER
-                                                        &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky_layer 4 3  &sk LEFT_SHIFT           &kp SPACE              &kp BACKSPACE        &ht_caps_word 3 0
+&kp BACKSLASH               &kp Q           &kp W                    &kp F                       &kp P                 &kp B                    &kp J                  &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
+&kp TAB                     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T   &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
+&ht_caps_word LEFT_SHIFT 0  &kp Z           &kp X                    &kp C                       &kp D                 &kp V                    &kp K                  &kp H                &shift_comma         &shift_dot               &shift_slash    &kp ENTER
+                                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky_layer 4 3  &sk LEFT_SHIFT           &kp SPACE              &kp BACKSPACE        &ht_sticky 2 ESCAPE
             >;
 
             label = "HOME";
