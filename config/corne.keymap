@@ -381,10 +381,10 @@
 
         navigation_layer {
             bindings = <
-&kp LG(GRAVE)   &kp F1     &kp F2                &kp LS(LA(F))            &kp LG(LS(P))            &none             &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
-&kp LG(TAB)     &kp LG(A)  &hrl_mod LCTRL LG(S)  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &kp LEFT_SHIFT    &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
-&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)             &kp LG(C)                &kp LG(V)                &none             &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                                 &trans                   &trans                   &trans            &kp ENTER      &trans        &kp DELETE
+&kp LG(GRAVE)   &kp LG(SLASH)  &kp F2                    &kp LS(LA(F))            &kp LG(LS(P))            &kp LA(LS(O))                  &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
+&kp LG(TAB)     &kp LG(A)      &hrl_mod LCTRL LG(LS(L))  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &hrl_mod LEFT_SHIFT LS(F12)    &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(Z)      &kp LG(X)                 &kp LG(C)                &kp LG(V)                &kp LG(B)                      &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
+                                                         &trans                   &trans                   &trans                         &kp ENTER      &trans        &kp DELETE
             >;
 
             label = "NAV";
