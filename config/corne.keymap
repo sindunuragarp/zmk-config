@@ -293,9 +293,9 @@
             bindings = <&kp LC(DOWN_ARROW)>, <&kp LA(LC(LG(SPACE)))>;
         };
 
-        ht_sticky: ht_sticky {
+        ht_layer_sk: ht_layer_sk {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_STICKY";
+            label = "HT_LAYER_SK";
             bindings = <&mo>, <&sk>;
 
             #binding-cells = <2>;
@@ -303,19 +303,30 @@
             flavor = "tap-preferred";
         };
 
-        ht_caps_word: ht_caps_word {
+        ht_layer_sl: ht_layer_sl {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_CAPS_WORD";
-            bindings = <&kp>, <&caps_word>;
+            label = "HT_LAYER_SL";
+            bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
 
-        ht_sticky_layer: ht_sticky_layer {
+        ht_mod_sk: ht_mod_sk {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_STICKY_LAYER";
-            bindings = <&mo>, <&sl>;
+            label = "HT_MOD_SK";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        ht_mod_sl: ht_mod_sl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MOD_SL";
+            bindings = <&kp>, <&sl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -337,10 +348,10 @@
 
         home_layer {
             bindings = <
-&kp GRAVE  &kp Q           &kp W                    &kp F                       &kp P                 &kp B                    &kp J                  &kp L                &kp U                &kp Y                    &kp MINUS       &kp DOUBLE_QUOTES
-&kp TAB    &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T   &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
-&kp AT     &kp Z           &kp X                    &kp C                       &kp D                 &kp V                    &kp K                  &kp H                &shift_comma         &shift_dot               &shift_slash    &kp BACKSLASH
-                                                    &mt LA(LC(LGUI)) LG(SPACE)  &ht_sticky_layer 4 3  &kp SPACE                &sk LEFT_SHIFT         &kp BACKSPACE        &lt 2 ESCAPE
+&kp ESCAPE  &kp Q           &kp W                    &kp F                       &kp P                      &kp B                    &kp J                  &kp L                &kp U                    &kp Y                    &kp MINUS       &kp GRAVE
+&kp TAB     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T        &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E      &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
+&shift_at   &kp Z           &kp X                    &kp C                       &kp D                      &kp V                    &kp K                  &kp H                &shift_comma             &shift_dot               &shift_slash    &kp BACKSLASH
+                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_layer_sk 4 LEFT_SHIFT  &kp SPACE                &kp ENTER              &kp BACKSPACE        &ht_mod_sl LEFT_SHIFT 2
             >;
 
             label = "HOME";
@@ -384,7 +395,7 @@
 &kp LG(GRAVE)   &kp LG(SLASH)  &kp F2                    &kp LS(LA(F))            &kp LG(LS(P))            &kp LA(LS(O))                  &kp PAGE_UP    &kp HOME      &kp UP         &kp END        &none  &kp LG(LA(RIGHT))
 &kp LG(TAB)     &kp LG(A)      &hrl_mod LCTRL LG(LS(L))  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &hrl_mod LEFT_SHIFT LS(F12)    &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
 &kp LEFT_SHIFT  &kp LG(Z)      &kp LG(X)                 &kp LG(C)                &kp LG(V)                &kp LG(B)                      &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                                         &trans                   &trans                   &trans                         &kp ENTER      &trans        &kp DELETE
+                                                         &trans                   &trans                   &trans                         &trans         &trans        &kp DELETE
             >;
 
             label = "NAV";
