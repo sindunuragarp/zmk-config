@@ -348,10 +348,10 @@
 
         home_layer {
             bindings = <
-&kp ESCAPE  &kp Q           &kp W                    &kp F                       &kp P                      &kp B                    &kp J                  &kp L                &kp U                    &kp Y                    &kp MINUS       &kp GRAVE
-&kp TAB     &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T        &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E      &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
-&shift_at   &kp Z           &kp X                    &kp C                       &kp D                      &kp V                    &kp K                  &kp H                &shift_comma             &shift_dot               &shift_slash    &kp BACKSLASH
-                                                     &mt LA(LC(LGUI)) LG(SPACE)  &ht_layer_sk 4 LEFT_SHIFT  &kp SPACE                &kp ENTER              &kp BACKSPACE        &ht_mod_sl LEFT_SHIFT 2
+&kp ESCAPE         &kp Q           &kp W                    &kp F                       &kp P                      &kp B                    &kp J                  &kp L                &kp U                    &kp Y                    &kp MINUS       &kp GRAVE
+&kp TAB            &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T        &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E      &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
+&mt LEFT_SHIFT AT  &kp Z           &kp X                    &kp C                       &kp D                      &kp V                    &kp K                  &kp H                &shift_comma             &shift_dot               &shift_slash    &kp BACKSLASH
+                                                            &mt LA(LC(LGUI)) LG(SPACE)  &ht_layer_sk 4 LEFT_SHIFT  &kp SPACE                &kp ENTER              &kp BACKSPACE        &ht_mod_sl LEFT_SHIFT 2
             >;
 
             label = "HOME";
