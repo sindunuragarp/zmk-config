@@ -310,8 +310,8 @@
             bindings = <
 &none  &kp N1           &kp N2             &kp N3                &kp N4                &kp N5                    &kp F1                  &kp F2                &kp F3                &kp F4             &kp F5            &none
 &none  &hrl_layer 3 N6  &hrl_mod LCTRL N7  &hrl_mod LEFT_ALT N8  &hrl_mod LEFT_GUI N9  &hrl_mod LEFT_SHIFT N0    &hrr_mod LEFT_SHIFT F6  &hrr_mod LEFT_GUI F7  &hrr_mod LEFT_ALT F8  &hrr_mod LCTRL F9  &hrr_layer 3 F10  &none
-&none  &kp COMMA        &kp SLASH          &kp ASTERISK          &kp MINUS             &kp PLUS                  &kp F11                 &kp F12               &kp F13               &kp F14            &kp F15           &none
-                                           &trans                &kp PERIOD            &trans                    &trans                  &trans                &trans
+&none  &kp PERCENT      &kp SLASH          &kp ASTERISK          &kp MINUS             &kp PLUS                  &kp F11                 &kp F12               &kp F13               &kp F14            &kp F15           &none
+                                           &kp COMMA             &kp PERIOD            &trans                    &trans                  &trans                &trans
             >;
 
             label = "NUM";
