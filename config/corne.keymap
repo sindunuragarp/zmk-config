@@ -93,78 +93,6 @@
             key-positions = <22 10>;
             layers = <0>;
         };
-
-        chord_f1 {
-            bindings = <&kp F1>;
-            key-positions = <0 12>;
-            layers = <4>;
-        };
-
-        chord_f2 {
-            bindings = <&kp F2>;
-            key-positions = <1 13>;
-            layers = <4>;
-        };
-
-        chord_f3 {
-            bindings = <&kp F3>;
-            key-positions = <2 14>;
-            layers = <4>;
-        };
-
-        chord_f4 {
-            bindings = <&kp F4>;
-            key-positions = <3 15>;
-            layers = <4>;
-        };
-
-        chord_f5 {
-            bindings = <&kp F5>;
-            key-positions = <4 16>;
-            layers = <4>;
-        };
-
-        chord_f6 {
-            bindings = <&kp F6>;
-            key-positions = <5 17>;
-            layers = <4>;
-        };
-
-        chord_f7 {
-            bindings = <&kp F7>;
-            key-positions = <6 18>;
-            layers = <4>;
-        };
-
-        chord_f8 {
-            bindings = <&kp F8>;
-            key-positions = <7 19>;
-            layers = <4>;
-        };
-
-        chord_f9 {
-            bindings = <&kp F9>;
-            key-positions = <8 20>;
-            layers = <4>;
-        };
-
-        chord_f10 {
-            bindings = <&kp F10>;
-            key-positions = <9 21>;
-            layers = <4>;
-        };
-
-        chord_f11 {
-            bindings = <&kp F11>;
-            key-positions = <10 22>;
-            layers = <4>;
-        };
-
-        chord_f12 {
-            bindings = <&kp F12>;
-            key-positions = <11 23>;
-            layers = <4>;
-        };
     };
 
     behaviors {
@@ -332,6 +260,16 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        ht_caps_word: ht_caps_word {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_CAPS_WORD";
+            bindings = <&mo>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -348,10 +286,10 @@
 
         home_layer {
             bindings = <
-&kp ESCAPE         &kp Q           &kp W                    &kp F                       &kp P                      &kp B                    &kp J                  &kp L                &kp U                    &kp Y                    &kp MINUS       &kp GRAVE
-&kp TAB            &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T        &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E      &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
-&mt LEFT_SHIFT AT  &kp Z           &kp X                    &kp C                       &kp D                      &kp V                    &kp K                  &kp H                &shift_comma             &shift_dot               &shift_slash    &kp BACKSLASH
-                                                            &mt LA(LC(LGUI)) LG(SPACE)  &ht_layer_sk 4 LEFT_SHIFT  &kp SPACE                &kp ENTER              &kp BACKSPACE        &ht_mod_sl LEFT_SHIFT 2
+&kp ESCAPE         &kp Q           &kp W                    &kp F                       &kp P                      &kp B                    &kp J                  &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
+&kp TAB            &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T        &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
+&mt LEFT_SHIFT AT  &kp Z           &kp X                    &kp C                       &kp D                      &kp V                    &kp K                  &kp H                &shift_comma         &shift_dot               &shift_slash    &kp BACKSLASH
+                                                            &mt LA(LC(LGUI)) LG(SPACE)  &ht_layer_sk 4 LEFT_SHIFT  &kp SPACE                &kp ENTER              &kp BACKSPACE        &ht_caps_word 2 0
             >;
 
             label = "HOME";
