@@ -333,10 +333,10 @@
 
         symbol_layer {
             bindings = <
-&none   &none            &kp LESS_THAN         &kp GREATER_THAN        &kp PERCENT              &none                       &none                          &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &none
-&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI EQUAL  &hrl_mod LEFT_SHIFT HASH    &hrr_mod LEFT_SHIFT AMPERSAND  &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &trans
-&none   &none            &kp SLASH             &kp ASTERISK            &kp CARET                &none                       &none                          &kp PIPE                 &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &none
-                                               &trans                  &trans                   &trans                      &trans                         &trans                   &trans
+&none   &none            &kp LESS_THAN         &kp GREATER_THAN        &kp PERCENT                 &none                       &none                          &kp DOLLAR               &kp LEFT_BRACE                      &kp RIGHT_BRACE                   &none          &none
+&trans  &kp EXCLAMATION  &hrl_mod LCTRL MINUS  &hrl_mod LEFT_ALT PLUS  &hrl_mod LEFT_GUI KP_EQUAL  &hrl_mod LEFT_SHIFT HASH    &hrr_mod LEFT_SHIFT AMPERSAND  &hrr_mod LEFT_GUI COLON  &hrr_mod LEFT_ALT LEFT_PARENTHESIS  &hrr_mod LCTRL RIGHT_PARENTHESIS  &kp SEMICOLON  &trans
+&none   &none            &kp SLASH             &kp ASTERISK            &kp CARET                   &none                       &none                          &kp PIPE                 &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                 &none          &none
+                                               &trans                  &trans                      &trans                      &trans                         &trans                   &trans
             >;
 
             label = "SYM";
