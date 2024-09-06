@@ -344,10 +344,10 @@
 
         navigation_layer {
             bindings = <
-&kp LG(GRAVE)   &kp LG(SLASH)  &kp F2                    &kp LS(LA(F))            &kp LG(LS(P))            &kp LA(LS(O))                  &kp PAGE_UP    &tap_home     &kp UP         &tap_end       &none  &kp LG(LA(RIGHT))
-&tap_app_view   &kp LG(A)      &hrl_mod LCTRL LG(LS(L))  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &hrl_mod LEFT_SHIFT LS(F12)    &kp PAGE_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT      &none  &kp LG(LA(LEFT))
-&kp LEFT_SHIFT  &kp LG(Z)      &kp LG(X)                 &kp LG(C)                &kp LG(V)                &kp LG(B)                      &none          &kp LC(LEFT)  &tap_app_view  &kp LC(RIGHT)  &none  &kp LG(LA(UP_ARROW))
-                                                         &trans                   &trans                   &trans                         &trans         &trans        &kp DELETE
+&kp LG(GRAVE)   &kp LG(SLASH)  &kp F2                    &kp LS(LA(F))            &kp LG(LS(P))            &kp LA(LS(O))                  &kp PAGE_UP    &tap_home           &kp UP      &tap_end             &kp LC(RIGHT_ARROW)  &kp LG(LA(RIGHT))
+&tap_app_view   &kp LG(A)      &hrl_mod LCTRL LG(LS(L))  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &hrl_mod LEFT_SHIFT LS(F12)    &kp PAGE_DOWN  &kp LEFT            &kp DOWN    &kp RIGHT            &kp LC(LEFT_ARROW)   &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(Z)      &kp LG(X)                 &kp LG(C)                &kp LG(V)                &kp LG(B)                      &none          &kp LG(LEFT_ARROW)  &none       &kp LG(RIGHT_ARROW)  &tap_app_view        &kp LG(LA(UP_ARROW))
+                                                         &trans                   &trans                   &trans                         &trans         &trans              &kp DELETE
             >;
 
             label = "NAV";
@@ -355,8 +355,8 @@
 
         config_layer {
             bindings = <
-&sys_reset   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR     &none     &none   &kp C_PREV            &kp C_STOP                &kp C_NEXT            &none  &sys_reset
-&none        &none  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &none     &none   &kp C_VOL_DN          &kp C_PLAY_PAUSE          &kp C_VOL_UP          &none  &none
+&sys_reset   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &none     &none   &kp C_PREV            &kp C_STOP                &kp C_NEXT            &none  &sys_reset
+&none        &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR     &none     &none   &kp C_VOL_DN          &kp C_PLAY_PAUSE          &kp C_VOL_UP          &none  &none
 &bootloader  &none  &none         &kp C_POWER   &kp LG(LC(Q))  &none     &none   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_INC  &none  &bootloader
                                   &tog 5        &tog 5         &tog 5    &tog 5  &tog 5                &tog 5
             >;
