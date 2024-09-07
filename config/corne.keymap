@@ -325,7 +325,7 @@
 &kp F11  &kp F1                 &kp F2                   &kp F3                      &kp F4                      &kp F5                    &kp F6                        &kp F7                      &kp F8                      &kp F9                   &kp F10                &kp F12
 &none    &hrl_layer 3 NUMBER_1  &hrl_mod LCTRL NUMBER_2  &hrl_mod LEFT_ALT NUMBER_3  &hrl_mod LEFT_GUI NUMBER_4  &hrl_mod LEFT_SHIFT N5    &hrr_mod LEFT_SHIFT NUMBER_6  &hrr_mod LEFT_GUI NUMBER_7  &hrr_mod LEFT_ALT NUMBER_8  &hrr_mod LCTRL NUMBER_9  &hrr_layer 3 NUMBER_0  &none
 &none    &kp MINUS              &kp SLASH                &kp ASTERISK                &kp PLUS                    &none                     &none                         &kp MINUS                   &kp COMMA                   &kp DOT                  &kp PERCENT            &none
-                                                         &trans                      &kp BACKSPACE               &trans                    &trans                        &trans                      &trans
+                                                         &kp DELETE                  &kp BACKSPACE               &trans                    &trans                        &trans                      &kp DELETE
             >;
 
             label = "NUM";
