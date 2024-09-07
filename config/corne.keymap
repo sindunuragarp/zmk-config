@@ -303,7 +303,7 @@
 &kp ESCAPE         &kp Q           &kp W                    &kp F                       &kp P                      &kp B                    &kp J                  &kp L                &kp U                &kp Y                    &kp MINUS       &kp GRAVE
 &kp TAB            &hrl_layer 3 A  &hrl_mod LEFT_CONTROL R  &hrl_mod LEFT_ALT S         &hrl_mod LEFT_GUI T        &hrl_mod LEFT_SHIFT G    &hrr_mod LEFT_SHIFT M  &hrr_mod LEFT_GUI N  &hrr_mod LEFT_ALT E  &hrr_mod LEFT_CONTROL I  &hrr_layer 3 O  &kp APOSTROPHE
 &mt LEFT_SHIFT AT  &kp Z           &kp X                    &kp C                       &kp D                      &kp V                    &kp K                  &kp H                &shift_comma         &shift_dot               &shift_slash    &kp BACKSLASH
-                                                            &mt LA(LC(LGUI)) LG(SPACE)  &ht_layer_sk 4 LEFT_SHIFT  &lt 3 SPACE              &lt 3 ENTER            &kp BACKSPACE        &ht_caps_word 2 0
+                                                            &mt LA(LC(LGUI)) LG(SPACE)  &ht_layer_sk 4 LEFT_SHIFT  &lt 2 SPACE              &lt 2 ENTER            &kp BACKSPACE        &ht_caps_word 3 0
             >;
 
             label = "HOME";
@@ -322,10 +322,10 @@
 
         number_layer {
             bindings = <
-&none  &kp N1           &kp N2             &kp N3                &kp N4                &kp N5                    &kp F1                  &kp F2                &kp F3                &kp F4             &kp F5            &none
-&none  &hrl_layer 3 N6  &hrl_mod LCTRL N7  &hrl_mod LEFT_ALT N8  &hrl_mod LEFT_GUI N9  &hrl_mod LEFT_SHIFT N0    &hrr_mod LEFT_SHIFT F6  &hrr_mod LEFT_GUI F7  &hrr_mod LEFT_ALT F8  &hrr_mod LCTRL F9  &hrr_layer 3 F10  &none
-&none  &kp PERCENT      &kp SLASH          &kp MINUS             &kp DOT               &kp COMMA                 &kp F11                 &kp F12               &kp F13               &kp F14            &kp F15           &none
-                                           &trans                &kp BACKSPACE         &trans                    &trans                  &trans                &trans
+&kp F11  &kp F1                 &kp F2                   &kp F3                      &kp F4                      &kp F5                    &kp F6                        &kp F7                      &kp F8                      &kp F9                   &kp F10                &kp F12
+&none    &hrl_layer 3 NUMBER_1  &hrl_mod LCTRL NUMBER_2  &hrl_mod LEFT_ALT NUMBER_3  &hrl_mod LEFT_GUI NUMBER_4  &hrl_mod LEFT_SHIFT N5    &hrr_mod LEFT_SHIFT NUMBER_6  &hrr_mod LEFT_GUI NUMBER_7  &hrr_mod LEFT_ALT NUMBER_8  &hrr_mod LCTRL NUMBER_9  &hrr_layer 3 NUMBER_0  &none
+&none    &kp MINUS              &kp SLASH                &kp ASTERISK                &kp PLUS                    &none                     &none                         &kp MINUS                   &kp COMMA                   &kp DOT                  &kp PERCENT            &none
+                                                         &trans                      &kp BACKSPACE               &trans                    &trans                        &trans                      &trans
             >;
 
             label = "NUM";
