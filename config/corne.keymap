@@ -344,9 +344,9 @@
 
         navigation_layer {
             bindings = <
-&kp LG(GRAVE)   &kp LG(SLASH)  &kp F2                    &kp LS(LA(F))            &kp LG(LS(P))            &kp LA(LS(O))                  &kp PAGE_UP    &tap_home           &kp UP      &tap_end             &none          &kp LG(LA(RIGHT))
-&tap_app_view   &kp LG(A)      &hrl_mod LCTRL LG(LS(L))  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &hrl_mod LEFT_SHIFT LS(F12)    &kp PAGE_DOWN  &kp LEFT            &kp DOWN    &kp RIGHT            &none          &kp LG(LA(LEFT))
-&kp LEFT_SHIFT  &kp LG(Z)      &kp LG(X)                 &kp LG(C)                &kp LG(V)                &kp LG(B)                      &none          &kp LA(LEFT_ARROW)  &none       &kp LA(RIGHT_ARROW)  &tap_app_view  &kp LG(LA(UP_ARROW))
+&kp LG(GRAVE)   &kp LG(SLASH)  &kp F2                    &kp LS(LA(F))            &kp LG(LS(P))            &kp LA(LS(O))                  &kp PAGE_UP    &tap_home           &kp UP      &tap_end             &none  &kp LG(LA(RIGHT))
+&tap_app_view   &kp LG(A)      &hrl_mod LCTRL LG(LS(L))  &hrl_mod LEFT_ALT LG(D)  &hrl_mod LEFT_GUI LG(F)  &hrl_mod LEFT_SHIFT LS(F12)    &kp PAGE_DOWN  &kp LEFT            &kp DOWN    &kp RIGHT            &none  &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp LG(Z)      &kp LG(X)                 &kp LG(C)                &kp LG(V)                &kp LG(B)                      &none          &kp LA(LEFT_ARROW)  &none       &kp LA(RIGHT_ARROW)  &none  &kp LG(LA(UP_ARROW))
                                                          &trans                   &trans                   &trans                         &trans         &trans              &kp DELETE
             >;
 
